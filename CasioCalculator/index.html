@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasioCalc.io</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header >
+        <h1 >CasioCalc.io</h1>
+    </header>
+    <main>
+        <div class="oga">
+            <div id="calcScreen">
+                <p id="input" class="active"></p>
+                <p id="answer">0</p>
+            </div>
+            <div id="calcButtons">
+                <button id="clear" class="masters" onclick="clearAll()">C</button>
+                <button id="backspace">
+                    <svg><use xlink:href="#backspace-icon"></use></svg>
+                </button>
+                <button id="divide" class="operators">&divide;</button>
+                <button id="7" class="numbers">7</button>
+                <button id="8" class="numbers">8</button>
+                <button id="9" class="numbers">9</button>
+                <button id="times" class="operators">&times;</button>
+                <button id="4" class="numbers">4</button>
+                <button id="5" class="numbers">5</button>
+                <button id="6" class="numbers">6</button>
+                <button id="minus" class="operators">-</button>
+                <button id="1" class="numbers">1</button>
+                <button id="2" class="numbers">2</button>
+                <button id="3" class="numbers">3</button>
+                <button id="plus" class="operators">+</button>
+                <button id="." class="numbers">.</button>
+                <button id="0" class="numbers zero">0</button>
+                <button id="calc" class="masters" onclick="calc()">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Designed By: Saurabh Gawali <span>&#64</span> 2024 </p>
+    </footer>
+    <svg style="display: none;">
+        <symbol id="backspace-icon" viewBox="0 0 512 512">
+            <path
+                d="M490.667 64h-357.59a21.333 21.333 0 0 0-17.848 9.647L3.485 244.314a21.334 21.334 0 0 0 0 23.372l111.744 170.667A21.333 21.333 0 0 0 133.077 448h357.589c11.782 0 21.333-9.551 21.333-21.333V85.333C512 73.551 502.449 64 490.667 64zm-21.334 341.333H144.609L46.833 256l97.776-149.333h324.725v298.666z" />
+            <path
+                d="M198.246 356.418c8.331 8.331 21.839 8.331 30.17 0l70.248-70.248 70.248 70.248c8.331 8.331 21.839 8.331 30.17 0s8.331-21.839 0-30.17L328.834 256l70.248-70.248c8.331-8.331 8.331-21.839 0-30.17s-21.839-8.331-30.17 0l-70.248 70.248-70.248-70.248c-8.331-8.331-21.839-8.331-30.17 0-8.331 8.331-8.331 21.839 0 30.17L268.495 256l-70.248 70.248c-8.332 8.332-8.332 21.839-.001 30.17z" />
+        </symbol>
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

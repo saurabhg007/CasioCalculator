@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MADE tommy soft';
+  color: #222;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10vh 85vh 5vh;
+      grid-template-rows: 10vh 85vh 5vh;
+}
+
+body header {
+  background: #f7ad59;
+  border-bottom: solid 1px rgba(34, 34, 34, 0.199);
+  padding-left: 5vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          
+}
+
+body header h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+body main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main div.oga {
+  margin: auto;
+  width: 25vw;
+  height: 70vh;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main div.oga div#calcScreen {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: solid 2px #222;
+  color: #222;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main div.oga div#calcScreen p#input {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 20px;
+  font-size: 2em;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+  margin: 0px;
+}
+
+body main div.oga div#calcScreen p#answer {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  font-size: 1em;
+  margin: 0px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 20px;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+  color: #888;
+}
+
+body main div.oga div#calcScreen p#input.inactive {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  font-size: 1em;
+  color: #888;
+}
+
+body main div.oga div#calcScreen p#input.inactive + p#answer {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  font-size: 2em;
+  color: #222;
+}
+
+body main div.oga div#calcButtons {
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main div.oga div#calcButtons button {
+  all: unset;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #e2e2e2;
+  text-align: center;
+  border-radius: 8px;
+  border: solid 1px rgba(34, 34, 34, 0.199);
+  font-size: 1.4em;
+  -webkit-transition: 30ms ease;
+  transition: 30ms ease;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main div.oga div#calcButtons button:hover {
+  background: #aaaaaa;
+  font-size: 2em;
+}
+
+@media (max-height: 470px) {
+  body main div.oga div#calcButtons button {
+    font-size: 1.1em;
+  }
+  body main div.oga div#calcButtons button:hover {
+    font-size: 1.3em;
+  }
+}
+
+body main div.oga div#calcButtons button#clear {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background: #f7ad59;
+}
+
+body main div.oga div#calcButtons button#clear:hover {
+  background: #e96464;
+}
+
+body main div.oga div#calcButtons button#backspace {
+  background: #f7ad59;
+}
+
+body main div.oga div#calcButtons button#backspace svg {
+  height: 20px;
+  width: 100%;
+  fill: #222;
+}
+
+body main div.oga div#calcButtons button#backspace:hover {
+  background: #e96464;
+}
+
+body main div.oga div#calcButtons button#backspace:hover svg {
+  height: 26px;
+}
+
+@media (max-height: 470px) {
+  body main div.oga div#calcButtons button#backspace svg {
+    height: 18px;
+  }
+  body main div.oga div#calcButtons button#backspace:hover svg {
+    height: 24px;
+  }
+}
+
+body main div.oga div#calcButtons button#calc {
+  background: #80cc54;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+}
+
+body main div.oga div#calcButtons button#calc:hover {
+  background: #5d913f;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  color: #222;
+  background: #e2e2e2;
+  border-top: solid 1px rgba(34, 34, 34, 0.199);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer p {
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */
